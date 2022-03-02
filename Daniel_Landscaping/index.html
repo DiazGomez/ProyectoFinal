@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Daniel Landscaping</title>
+      <link rel="stylesheet" href="/MyProjects/Proyecto Final/SiteStyle/global.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+   </head>
+
+   <body>
+
+      <header>
+         <h3><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/index.html" style="text-decoration: none;">Daniel Landscaping</a></h3>
+      </header>
+
+      <div class="container">
+         <div class="navbar">
+         <img src="/MyProjects/Proyecto Final/SiteImage/house.png" class="logo">  
+      <nav>
+      <ul id="menulist">
+         <li><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/About/Employees/Careers/About.html">About</a></li>
+         <li><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/Works/CaguasCidra/Works.html">Works</a></li>
+         <li><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/Contact/Contact.html">Contact</a></li>
+      </ul>
+      </nav>
+      <img src="/MyProjects/Proyecto Final/SiteImage/menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <div class="col-1">
+            <img src="/MyProjects/Proyecto Final/SiteImage/paisaje.png" class="mower">
+            <div class="color-box"></div>
+      </div>
+  
+      <footer>
+         <p>Se realiza todo tipo de trabajo de jardinería!</p>
+      </footer>
+
+      <script>
+         var menulist = document.getElementById("menulist");
+         menulist.style.maxHeight = "0px";
+         function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+               menulist.style.maxHeight = "130px";
+            }
+            else{
+               menulist.style.maxHeight = "0px";
+            }
+         }
+      </script>
+
+<br>
+<br>
+<hr>
+
+<address>
+   <p>Copyright &copy; 2022</p>
+   <h5>Trabajo realizado por: <a href="mailto:ddiaz5709@stu.nuc.edu">ddiaz5709@stu.nuc.edu</a></h5>
+   </address>
+   </body>
+</html>

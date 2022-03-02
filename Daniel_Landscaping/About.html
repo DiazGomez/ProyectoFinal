@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>Daniel Landscaping</title>
+                <link rel="stylesheet" href="/MyProjects/Proyecto Final/SiteStyle/global.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>     
+                    body{
+                        font-family: "verdana";
+                        font-size: 11px;
+                    }
+            
+                    input, textarea{
+                        border: 1px solid #aaa;
+                        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+                        border-radius: 4px;
+                    }
+            
+                    textarea{
+                        overflow: auto;
+                        padding: 5px;
+                    }
+            
+                    #submit{
+                        color: #555;
+                        font-weight: bold;
+                    }
+            
+                    #reset{
+                        color: #555;
+                        font-weight: bold;
+                    }
+            
+                    label{
+                        padding-top: 15px;
+                        display: block;
+                        font-weight: bold;
+                    }
+            
+                    legend{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #555;
+                    }
+            
+                    fieldset{
+                        border: 1px solid #555;
+                        border-radius: 4px;
+                        margin-bottom: 5px;
+                    }
+                    
+                    input:invalid, textarea:invalid{
+                        background: #fff;
+                        box-shadow: 0 0 5px #d45252;
+                    }
+            
+                    input:required:valid, textarea:required:valid{
+                        background: #fff;
+                        box-shadow: 0 0 5px #5cd053;
+                        border-color: #28921f;
+                    }
+                </style>  
+        </head>
+
+   <body>
+
+      <header>
+        <h3><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/index.html" style="text-decoration: none;">Daniel Landscaping</a></h3>
+      </header>
+
+      <div class="container">
+         <div class="navbar">
+         <img src="/MyProjects/Proyecto Final/SiteImage/house.png" class="logo">  
+      <nav>
+      <ul id="menulist">
+         <li><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/About/Employees/Careers/About.html">About</a></li>
+         <li><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/Works/CaguasCidra/Works.html">Works</a></li>
+         <li><a href="/MyProjects/Proyecto Final/Daniel Landscaping/Home/Contact/Contact.html">Contact</a></li>
+      </ul>
+      </nav>
+      <img src="/MyProjects/Proyecto Final/SiteImage/menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+      <script>
+         var menulist = document.getElementById("menulist");
+         menulist.style.maxHeight = "0px";
+         function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+               menulist.style.maxHeight = "130px";
+            }
+            else{
+               menulist.style.maxHeight = "0px";
+            }
+         }
+      </script>
+
+        <table>
+                <thead>
+                        <tr>
+                        <th colspan = "1">History</th>
+                        <th colspan = "1">Employees</th>
+                        <th colspan = "1">Careers</th>
+                         </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                        <td id="History">
+                        <p>Sr. Daniel Diaz, jardinero, de unos 70 años de edad y con más de 30 años de experiencia en el área laboral de la jardinería. Hoy día disfruta de su retiro y descanso, aunque esto no lo detiene de realizar la labor de limpieza y mantenimiento de patios; debido a que encuentra gusto en realizar el trabajo, ejercitarse mediante la actividad física y entiende que si hay valor en dicha labor. <br>
+                           Su jornada, empieza temprano en la mañana, aunque en ocasiones, dependiendo de la localización, hay estipulaciones que impiden se trabaje antes de las 8am. El estimado apunta, a que diariamente, se realizan entre 1 y 2 patios.<br>
+                           En Daniel Landscaping, se trabaja precisando en cumplir con los deseos y/o exigencias de los empleadores, y así evitar errores o malgustos. Si usted entiende, que cumple con los requisitos y supera los retos de hoy día, adjunto llene formulario, y envie su resumé.</p>     
+                        </td>
+                        <td id="Employees">        
+                        <img src="/MyProjects/Proyecto Final/SiteImage/employee.png" alt="employee" width="150px" length="150px">
+                        </td>
+                        <td id="Careers">
+                        <form action="form.php" method="post">
+                                <fieldset>
+                                    <legend>Solicitud de empleo</legend>
+                                    <p>Adjunto envia Resume Profesional.</p>
+                                    <label for="name"> Name:</label>
+                                    <input type="text" name="name" id="name" required>
+                                    <label for="email"> Email:</label>
+                                    <input type="email" name="email" id="email" required>
+                                    <label for="comments"> Message:</label>
+                                    <textarea cols="25" rows="5" name="comments" required></textarea>
+                                    <br>
+                                    <br>
+                                    <input type="file" name="upload">
+                                    <br>
+                                    <br>
+                                    <input type="submit" name="Submit" value="Submit" id="submit">
+                                    <input type="reset" name="Reset" value="Reset" id="reset">
+                                </fieldset>
+                            </form>
+                        </td>
+                        </tr>
+                </tbody>
+        </table>
+
+        <footer>
+            <p>Se realiza todo tipo de trabajo de jardinería!</p>
+         </footer>
+
+   </body>
+</html>
